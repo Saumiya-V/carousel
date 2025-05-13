@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+  <title>Gallerypop</title>
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg bg-black fixed-top">
+    <div class="container-fluid">
+      <a class="navbar-brand text-white" href="#">GalleryPop</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active text-white" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="#">Link</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled text-secondary">Disabled</a>
+          </li>
+        </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2 " type="search" placeholder="Search the gallery..." aria-label="Search">
+          <button class="btn btn-outline-secondary text-white" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+  <!-- Carousel -->
+  <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <!-- Slide 1 -->
+      <div class="carousel-item active">
+        <img src="./images/image1.jpeg" class="d-block w-100" alt="...">
+        <div class="carousel-caption position-absolute top-50 start-50 translate-middle">
+          <h4 class="display-6">Discover Art That Pops</h4>
+          <p  class="fw-bold">Step into a vibrant world where creativity knows no bounds. From bold masterpieces to subtle snapshots, GalleryPop brings you a curated collection of artworks that inspire, provoke, and delight.
+          </p>
+          <button class="btn bg-black text-white">Sign up today</button>
+        </div>
+      </div>
+      <!-- Slide 2 -->
+      <div class="carousel-item">
+        <img src="./images/image1.jpeg" class="d-block w-100" alt="...">
+        <div class="carousel-caption position-absolute top-55 start-50 translate-middle">
+          <h4 class="display-6">Discover Art That Pops</h4>
+          <button class="btn bg-black text-white">Sign up today</button>
+        </div>
+      </div>
+      <!-- Slide 3 -->
+      <div class="carousel-item">
+        <img src="./images/image1.jpeg" class="d-block w-100 " alt="...">
+        <div class="carousel-caption position-absolute top-55 start-50 translate-middle">
+          <h4 class="display-6">Discover Art That Pops</h4>
+          <button class="btn bg-black text-white">Sign up today</button>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+  <!-- Cards -->
+  <div class="container d-flex justify-content-between mt-5" style="width:60rem">
+     <!-- Card 1 -->
+  <div class="card" style="width: 16rem;">
+    <img src="./images/art1.jpeg" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">Tribal Echo</h5>
+      <p class="card-text">Adds a sense of history and emotion tied to tribal art.</p>
+      <div class="d-flex justify-content-between align-items-center mt-3">
+        <div class="d-flex gap-2">
+          <a href="#" class="btn btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#popmodal">View</a>
+          <a href="#" class="btn btn-outline-secondary">Edit</a>
+        </div>
+        <div>
+          <span class="bg-black text-white rounded px-2 py-1 small">9 mins</span>
+        </div>
+      </div>      
+    </div>
+  </div>
+  <!-- Card 2 -->
+  <div class="card" style="width: 16rem;">
+    <img src="./images/art2.jpeg" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">Fragmented Soul</h5>
+      <p class="card-text">A powerful blend of realism and abstraction.</p>
+      <div class="d-flex justify-content-between align-items-center mt-3">
+        <div class="d-flex gap-2">
+          <a href="#" class="btn btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#popmodal">View</a>
+          <a href="#" class="btn btn-outline-secondary">Edit</a>
+        </div>
+        <div>
+          <span class="bg-black text-white rounded px-2 py-1 small">9 mins</span>
+        </div>
+      </div>      
+    </div>
+  </div>
+  <!-- card 3 -->
+  <div class="card" style="width: 16rem;">
+    <img src="./images/art3.png" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">Radiant Bloom</h5>
+      <p class="card-text">A vivid, digital painting of a fantasy flower in full bloom.</p>
+      <div class="d-flex justify-content-between align-items-center mt-3">
+        <div class="d-flex gap-2">
+          <a href="#" class="btn btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#popmodal">View</a>
+          <a href="#" class="btn btn-outline-secondary">Edit</a>
+        </div>
+        <div>
+          <span class="bg-black text-white rounded px-2 py-1 small">9 mins</span>
+        </div>
+      </div>      
+    </div>
+  </div>
+  </div>
+  <!-- Modal -->
+  <div class="modal" id="popmodal" tabindex="-1">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Gallerypop</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p>GalleryPop is a vibrant online space where art comes alive. Discover bold visuals, diverse styles, and expressive works curated to inspire, challenge, and connect creative minds.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+          <button type="button" class="btn btn-primary">Buy</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Accordion -->
+  <div class="container accordion mt-5" id="accordionExample" style="width: 60rem;">
+    <div class="accordion-item active">
+      <h2 class="accordion-header" id="headingOne">
+        <button class="accordion-button bg-black text-white" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+          Tribal Echo
+        </button>
+      </h2>
+      <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+        <div class="accordion-body">
+          <strong>Rooted in ancestral rhythms and raw emotion, Tribal Echoes channels the spirit of ancient cultures. Through earthy tones and bold textures, this piece honors heritage, ritual, and the enduring voice of tradition passed from generation to generation.
+        </div>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="headingTwo">
+        <button class="accordion-button collapsed bg-black text-white" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+         Fragmented Soul
+        </button>
+      </h2>
+      <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+        <div class="accordion-body">
+          <strong>In Fragmented Soul, shards of color and shadow come together to reveal the complexity of identity. It's a visual dialogue between vulnerability and strength, capturing the layered essence of the self — torn, whole, and beautifully human.
+        </div>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="headingThree">
+        <button class="accordion-button collapsed bg-black text-white" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+          Radiant Bloom
+        </button>
+      </h2>
+      <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+        <div class="accordion-body">
+          <strong>Alive with color and motion, Radiant Bloom celebrates the energy of growth and self-expression. Bursting petals and luminous tones invite the viewer into a world where nature and emotion converge in a dance of light and transformation.
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Footer -->
+  <footer class="bg-black text-white mt-5 py-4 d-flex justify-content-between">
+      <p class="mb-1 px-4">© 2025 GalleryPop. All rights reserved.  <a href="#" class="text-white text-decoration-none mx-2">Privacy Policy</a> |
+        <a href="#" class="text-white text-decoration-none mx-2">Terms</a> </p>
+        <a href="#carouselExampleIndicators" class="text-white text-decoration-none mx-2 px-4">Back to top</a>
+  </footer>  
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+</body>
+</html>
